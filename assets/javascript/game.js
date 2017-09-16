@@ -111,9 +111,6 @@ function gameWon () {
 function reset() {
         turnCounter = 20;
         $("#turns").html(turnCounter);
-        winCounter = 0;
-        $("#wins").html(winCounter);
-        lossCounter = 0;
         totalScore = 0;
         $("#total-score").html(totalScore);
         $("#losses").html(lossCounter);
