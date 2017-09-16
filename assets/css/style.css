@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin-right: 400px;
+	background-color: black;
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+header {
+	margin:10px;
+	padding: 10px;
+	background-color: blue;
+}
+
+#instructions {
+	margin:10px;
+	padding: 10px;
+	background-color: red;
+}
+
+#goal-number {
+	margin:10px;
+	padding: 10px;
+	background-color: orange;
+	float: left;
+}
+
+#wins-loses {
+	margin:10px;
+	padding: 10px;
+	background-color: yellow;
+	float: left;
+}
+
+#turn-counter {
+	margin:10px;
+	padding: 10px;
+	background-color: maroon;
+	float: left;
+}
+
+#crystals {
+	margin: 10px;
+	padding: 10px;
+	clear: both;
+}
+
+.crystal-button{
+	margin: 10px;
+	padding: 10px;
+	height: 150px;
+	width: 150px;
+}
+
+#score-text {
+	margin:10px;
+	padding: 10px;
+	background-color: pink;
+}
+
+#total-score {
+	margin:10px;
+	padding: 10px;
+	background-color: purple;
+}
