@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
  	 <title>The Curious Case of the Crystal Curse</title>
  	 <link rel="icon" type="image/png" href="assets/images/crystal_icon.png">
+ 	 <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+ 	 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -16,6 +18,7 @@
 	</header>
 
 	<section>
+	<div id="game-description">A mysterious plague from another galaxy has infiltrated our realm. Our only hope is an ancient crystal counting ritual but.. eek!.. our species are blind to numbers. Please help us before it's too late!</div>
 	<div id="instructions">
 		<h2>Instructions:</h2>
 		</br>
@@ -34,14 +37,16 @@
 
 		<p>Each time when the game starts, the game will change the values of each crystal.</p> 
 	</div>
+
+	<div id="container">
 	<div id="goal-number"></div>
 	<div id="wins-losses">
 		<p>Wins: <span id="wins">0</span></p>
 		<p>Losses: <span id="losses">0</span></p>
 	</div>
-	<div id="turn-counter">
-		<p>Turns left: <span id="turns">20</span></p>
+	<div id="turn-counter">Turns left: <span id="turns">20</span></div>
 	</div>
+	
 	<div id="crystals">
 		<img id="pink-crystal" class="crystal-button" src="assets/images/pink_crystal.jpg"/>
 		<img id="blue-crystal" class="crystal-button" src="assets/images/blue_crystal.jpg"/>

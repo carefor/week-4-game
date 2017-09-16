@@ -15,26 +15,45 @@ body {
 }
 
 #overall-container {
-	margin: 20px 60px;
+	margin: 30px;
 	padding: 20px;
 }
 
 h1 {
-	font-size: 24px;
+	font-family: 'Julius Sans One', 'Helvetica', sans-serif;
+	font-size: 36px;
 }
 
 header {
-	margin:10px;
+	margin: 20px;
 	padding: 10px;
 	text-align: center;
-background-color: rgba(236, 88, 122, 0.4); 
+	background-color: rgba(236, 88, 122, 0.4); 
+}
+
+section {
+	font-family: 'Philosopher', 'Helvetica', sans-serif;
+
+}
+
+#game-description {
+	margin:10px;
+	padding: 10px;
+	background-color: rgba(236, 88, 122, 0.4); 
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
 }
 
 #instructions {
 	margin:10px;
 	padding: 10px;
-background-color: rgba(236, 88, 122, 0.4); 
+	background-color: rgba(236, 88, 122, 0.4); 
+	font-size: 18px;
+}
 
+#container {
+	width: 75%;
 }
 
 #goal-number {
@@ -42,7 +61,8 @@ background-color: rgba(236, 88, 122, 0.4);
 	padding: 10px;
 	float: left;
 	text-align: center;
-background-color: rgba(236, 88, 122, 0.4); 
+	background-color: rgba(236, 88, 122, 0.4); 
+	font-size: 40px;
 }
 
 #wins-losses {
@@ -50,7 +70,8 @@ background-color: rgba(236, 88, 122, 0.4);
 	padding: 10px;
 	float: left;
 	text-align: center;
-background-color: rgba(236, 88, 122, 0.4); 
+	background-color: rgba(236, 88, 122, 0.4); 
+	font-size: 25px;
 }
 
 #turn-counter {
@@ -58,7 +79,8 @@ background-color: rgba(236, 88, 122, 0.4);
 	padding: 10px;
 	float: left;
 	text-align: center;
-background-color: rgba(236, 88, 122, 0.4); 
+	background-color: rgba(236, 88, 122, 0.4); 
+	font-size: 25px;
 }
 
 #crystals {
@@ -76,12 +98,14 @@ background-color: rgba(236, 88, 122, 0.4);
 	margin:10px;
 	padding: 10px;
 	text-align:  center;
-background-color: rgba(236, 88, 122, 0.4); 
+	background-color: rgba(236, 88, 122, 0.4); 
+	font-size: 25px;
 }
 
 #total-score {
 	margin:10px;
 	padding: 10px;
 	text-align: center;
-background-color: rgba(236, 88, 122, 0.4); 
+	background-color: rgba(236, 88, 122, 0.4); 
+	font-size: 40px;
 }
