@@ -2,10 +2,21 @@
 	box-sizing: border-box;
 }
 
+#background {
+	height: 100%; 
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+}
+
 body {
-	margin-right: 400px;
-	background-color: black;
+	margin: 10px;
 	font-size: 20px;
+}
+
+#overall-container {
+	margin: 20px 60px;
+	padding: 20px;
 }
 
 h1 {
@@ -15,39 +26,42 @@ h1 {
 header {
 	margin:10px;
 	padding: 10px;
-	background-color: blue;
+	text-align: center;
+background-color: rgba(236, 88, 122, 0.4); 
 }
 
 #instructions {
 	margin:10px;
 	padding: 10px;
-	background-color: red;
+background-color: rgba(236, 88, 122, 0.4); 
+
 }
 
 #goal-number {
 	margin:10px;
 	padding: 10px;
-	background-color: orange;
 	float: left;
+	text-align: center;
+background-color: rgba(236, 88, 122, 0.4); 
 }
 
 #wins-losses {
 	margin:10px;
 	padding: 10px;
-	background-color: yellow;
 	float: left;
+	text-align: center;
+background-color: rgba(236, 88, 122, 0.4); 
 }
 
 #turn-counter {
 	margin:10px;
 	padding: 10px;
-	background-color: maroon;
 	float: left;
+	text-align: center;
+background-color: rgba(236, 88, 122, 0.4); 
 }
 
 #crystals {
-	margin: 10px;
-	padding: 10px;
 	clear: both;
 }
 
@@ -61,11 +75,13 @@ header {
 #score-text {
 	margin:10px;
 	padding: 10px;
-	background-color: pink;
+	text-align:  center;
+background-color: rgba(236, 88, 122, 0.4); 
 }
 
 #total-score {
 	margin:10px;
 	padding: 10px;
-	background-color: purple;
+	text-align: center;
+background-color: rgba(236, 88, 122, 0.4); 
 }
