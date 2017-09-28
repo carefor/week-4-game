@@ -43,7 +43,8 @@ header {
 	padding: 10px;
 	text-align: center;
 	background-color: rgba(236, 88, 122, 0.4); 
-}
+ 	border-radius: 15px 50px;
+  }
 
 section {
 	font-family: 'Julius Sans One', 'Helvetica', sans-serif;
@@ -60,6 +61,7 @@ section {
 	font-size: 22px;
 	font-style: italic;
 	text-shadow: 1px -1px 3px #DE54BE;
+	border-radius: 50px 15px;
 }
 
 #instructions {
@@ -69,6 +71,7 @@ section {
 	font-family: 'Philosopher', 'Helvetica', sans-serif;
 	font-size: 20px;
 	text-shadow: 0px 0px 7px #C09BE0;
+	border-radius: 15px 50px;
 }
 
 #container {
@@ -85,6 +88,7 @@ section {
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 22px;
 	float: left;
+	border-radius: 50px 15px;
 }
 
 #goal-number {
@@ -100,6 +104,7 @@ section {
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 22px;
 	float: left;
+	border-radius: 15px 50px;
 }
 
 #wins {
@@ -119,6 +124,7 @@ section {
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 22px;
 	float: left;
+	border-radius: 50px 15px;
 }
 
 #turns {
@@ -200,6 +206,7 @@ section {
 	text-align:  center;
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 22px;       
+	border-radius: 15px 50px;
 }
 
 #total-score {
