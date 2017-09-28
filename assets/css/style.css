@@ -198,3 +198,11 @@ section {
 #total-score {
 	font-size: 45px;         
 }
+
+audio {
+	width: 175px;
+	padding: 5px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
