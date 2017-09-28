@@ -3,6 +3,7 @@
 }
 
 #background {
+	width: 100%;
 	height: 100%; 
     	background-position: center;
     	background-repeat: no-repeat;
@@ -10,13 +11,16 @@
 }
 
 body {
+	width: 100%;
 	margin: 10px;
 	font-size: 20px;
 }
 
 #overall-container {
+	width: 100%;
 	margin: 30px;
 	padding: 20px;
+	display: table;
 }
 
 h1 {
@@ -53,37 +57,40 @@ section {
 }
 
 #container {
-	width: 75%;
+	display: table;
+	margin: auto;
 }
 
 #goal-number {
 	margin:10px;
 	padding: 10px;
-	float: left;
 	text-align: center;
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 40px;
+	float: left;
 }
 
 #wins-losses {
 	margin:10px;
 	padding: 10px;
-	float: left;
 	text-align: center;
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 25px;
+	float: left;
 }
 
 #turn-counter {
 	margin:10px;
 	padding: 10px;
-	float: left;
 	text-align: center;
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 25px;
+	float: left;
 }
 
 #crystals {
+	display: table;
+	margin: auto;
 	clear: both;
 }
 
@@ -94,18 +101,23 @@ section {
 	width: 150px;
 }
 
+#score-container {
+	margin:10px;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(236, 88, 122, 0.4); 
+}
+
 #score-text {
 	margin:10px;
 	padding: 10px;
 	text-align:  center;
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 25px;
+	float: left;
 }
 
 #total-score {
-	margin:10px;
-	padding: 10px;
 	text-align: center;
-	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 40px;
 }
