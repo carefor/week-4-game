@@ -70,8 +70,10 @@ section {
 }
 
 #goal-container {
-	margin:10px;
-	padding: 10px;
+	min-height: 80px;
+	min-width: 250px;
+	margin: 20px;
+	padding: 20px;
 	text-align: center;
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 22px;
@@ -83,8 +85,10 @@ section {
 }
 
 #wins-losses {
-	margin:10px;
-	padding: 10px;
+	min-height: 100px;
+	min-width: 135px;
+	margin: 20px;
+	padding: 20px;
 	text-align: center;
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 22px;
@@ -100,8 +104,10 @@ section {
 }
 
 #turn-counter {
-	margin:10px;
-	padding: 10px;
+	min-height: 70px;
+	min-width: 170px;
+	margin: 20px;
+	padding: 20px;
 	text-align: center;
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-size: 22px;
@@ -118,7 +124,7 @@ section {
 	clear: both;
 }
 
-.crystal-button-normal{
+#sparkle-crystal {
 	margin: 10px;
 	padding-bottom: 20px;
 	padding-left: 10px;
@@ -127,7 +133,7 @@ section {
 	width: 150px;
 }
 
-.crystal-button-enlarge {
+#flash-crystal {
 	padding-bottom: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -135,9 +141,45 @@ section {
 	width: 175px;
 }
 
-.crystal-button-increase {
+#morph-crystal {
 	height: 200px;
 	width: 200px;
+}
+
+#diamond-crystal {
+	margin: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 150px;
+	width: 150px;
+}
+
+.grow:hover{
+	-webkit-transform: scale(1.3);
+        	-ms-transform: scale(1.3);
+        	transform: scale(1.3);;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.bounce:active {
+	animation: bounce 1s;
 }
 
 #score-footer {
