@@ -48,6 +48,7 @@ header {
 section {
 	font-family: 'Julius Sans One', 'Helvetica', sans-serif;
 	font-weight: bold;
+	text-shadow: 2px 1px 3px #482B59;
 }
 
 #game-description {
@@ -55,8 +56,10 @@ section {
 	padding: 10px;
 	background-color: rgba(236, 88, 122, 0.4); 
 	text-align: center;
+	line-height: 30px;
 	font-size: 22px;
 	font-style: italic;
+	text-shadow: 1px -1px 3px #DE54BE;
 }
 
 #instructions {
@@ -64,7 +67,8 @@ section {
 	padding: 10px;
 	background-color: rgba(236, 88, 122, 0.4); 
 	font-family: 'Philosopher', 'Helvetica', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
+	text-shadow: 0px 0px 7px #C09BE0;
 }
 
 #container {
