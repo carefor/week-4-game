@@ -4,10 +4,10 @@ var winCounter = 0;
 var lossCounter = 0;
 var turnCounter = 20;
 var totalScore;
-var pinkCrystal;
-var blueCrystal;
-var purpleCrystal;
-var whiteCrystal;
+var sparkleCrystal;
+var flashCrystal;
+var morphCrystal;
+var diamondCrystal;
 var goalNumber = 0;
 var totalScore = 0;
 
@@ -17,18 +17,18 @@ function getRandomNum(min, max) {
 getRandomNum();
 
 function generateRandomAll() {
-	pinkCrystal = getRandomNum(1, 12);
-	blueCrystal = getRandomNum(1, 12);
-	purpleCrystal = getRandomNum(1, 12);
-	whiteCrystal = getRandomNum(1, 12);
+	sparkleCrystal = getRandomNum(1, 12);
+	flashCrystal = getRandomNum(1, 12);
+	morphCrystal = getRandomNum(1, 12);
+	diamondCrystal = getRandomNum(1, 12);
 	goalNumber = getRandomNum(19, 120);
 	$("#goal-number").html(goalNumber);
 }
 generateRandomAll() ;
 
 function crystalClick() {
-	$("#pink-crystal").on("click", function() {
-		totalScore += pinkCrystal;
+	$("#sparkle-crystal").on("click", function() {
+		totalScore += sparkleCrystal;
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
@@ -41,8 +41,8 @@ function crystalClick() {
 				noTurns();
 			}
 	});
-	$("#blue-crystal").on("click", function() {
-		totalScore += blueCrystal;
+	$("#flash-crystal").on("click", function() {
+		totalScore += flashCrystal;
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
@@ -55,8 +55,8 @@ function crystalClick() {
 				noTurns();
 			}
 	});
-	$("#purple-crystal").on("click", function() {
-		totalScore += purpleCrystal;
+	$("#morph-crystal").on("click", function() {
+		totalScore += morphCrystal;
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
@@ -69,8 +69,8 @@ function crystalClick() {
 				noTurns();
 			}
 	});
-	$("#white-crystal").on("click", function() {
-		totalScore += whiteCrystal;
+	$("#diamond-crystal").on("click", function() {
+		totalScore += diamondCrystal;
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
