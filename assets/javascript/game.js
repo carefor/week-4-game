@@ -99,7 +99,6 @@ function noTurns() {
 	$("#losses").html(lossCounter);
 	reset();
 }
-//or if run out of turns
 
 function gameWon () {
 	alert("Your skills are legendary.. You win!");
