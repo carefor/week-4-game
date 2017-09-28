@@ -12,14 +12,20 @@
 
 body {
 	width: 100%;
-	margin: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
 	font-size: 20px;
 }
 
 #overall-container {
 	width: 75%;
-	margin: 30px;
-	padding: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
 	display: table;
 	margin: auto;
 }
@@ -62,13 +68,17 @@ section {
 	margin: auto;
 }
 
-#goal-number {
+#goal-container {
 	margin:10px;
 	padding: 10px;
 	text-align: center;
 	background-color: rgba(236, 88, 122, 0.4); 
-	font-size: 40px;
+	font-size: 25px;
 	float: left;
+}
+
+#goal-number {
+	font-size: 40px;
 }
 
 #wins-losses {
@@ -102,23 +112,19 @@ section {
 	width: 150px;
 }
 
-#score-container {
-	margin:10px;
-	padding: 10px;
-	text-align: center;
-	background-color: rgba(236, 88, 122, 0.4); 
-}
-
-#score-text {
-	margin:10px;
-	padding: 10px;
+#score-footer {
+	width: 100%;
+	height: 8%;
+	position: relative;
+	bottom: 0;
+	clear: both;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align:  center;
 	background-color: rgba(236, 88, 122, 0.4); 
-	font-size: 25px;
-	float: left;
+	font-size: 22px;       
 }
 
 #total-score {
-	text-align: center;
-	font-size: 40px;
+	font-size: 40px;         
 }
