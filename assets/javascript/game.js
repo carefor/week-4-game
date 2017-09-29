@@ -88,7 +88,7 @@ function crystalClick() {
 }
 crystalClick();
 
-function overlayLoseTurns() {
+function overlayLostTurns() {
 	overlay = document.querySelector(".overlay");
   	overlay.style.display = "block";
   	gif = document.querySelector(".gif");
@@ -98,7 +98,7 @@ function overlayLoseTurns() {
   	$("#end-text").append(turnsText);
 }
 
-function overlayLoseTotal() {
+function overlayLostTotal() {
 	overlay = document.querySelector(".overlay");
   	overlay.style.display = "block";
   	gif = document.querySelector(".gif");
@@ -108,7 +108,7 @@ function overlayLoseTotal() {
   	$("#end-text").append(loseText);
 }
 
-function overlayWin() {
+function overlayWon() {
 	overlay = document.querySelector(".overlay");
   	overlay.style.display = "block";
   	gif = document.querySelector(".gif");
@@ -121,7 +121,7 @@ function overlayWin() {
 function gameLostTurns () {
 	lossCounter++;
 	$("#losses").html(lossCounter);
-	overlayLoseTurns();
+	overlayLostTurns();
 	setTimeout (reset, 5000);
 
 }
@@ -129,14 +129,14 @@ function gameLostTurns () {
 function gameLostTotal () {
 	lossCounter++;
 	$("#losses").html(lossCounter);
-	overlayLoseTotal();
+	overlayLostTotal();
 	setTimeout (reset, 5000);
 }
 
 function gameWon () {
 	winCounter++;
 	$("#wins").html(winCounter);
-	overlayWin();
+	overlayWon();
 	setTimeout (reset, 5000);
 }
 
