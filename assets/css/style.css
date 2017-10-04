@@ -5,9 +5,9 @@
 #background {
 	width: 100%;
 	height: 100%; 
-    	background-position: center;
-    	background-repeat: no-repeat;
-    	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body {
@@ -38,7 +38,6 @@ h1 {
 	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
 	text-align: center;
 }
-
 
 header {
 	margin: 10px;
@@ -102,7 +101,7 @@ section {
 @keyframes slideInFromLeft {
   	0% {
    	 transform: translateX(-100%);
- 	 }
+ 	}
   	100% {
    	 transform: translateX(0);
   	}
@@ -181,29 +180,29 @@ section {
 	width: 150px;
 }
 
-.grow:hover{
+.grow:hover {
 	-webkit-transform: scale(1.3);
-        	-ms-transform: scale(1.3);
-        	transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 } 
 
 .bounce:active { 
-    	-moz-animation:bounce .40s linear;  
-        	-webkit-animation:bounce .40s linear;
+   	-moz-animation:bounce .40s linear;  
+    -webkit-animation:bounce .40s linear;
 }
 
 @-moz-keyframes bounce {
-       	 0%{ -moz-transform:scale(0); opacity:0;}
-        	50%{ -moz-transform:scale(1.3); opacity:0.4; }
-       	 75%{ -moz-transform:scale(0.9); opacity:0.7;}
-        	100%{ -moz-transform:scale(1); opacity:1;}
+    0%{ -moz-transform:scale(0); opacity:0;}
+    50%{ -moz-transform:scale(1.3); opacity:0.4; }
+    75%{ -moz-transform:scale(0.9); opacity:0.7;}
+    100%{ -moz-transform:scale(1); opacity:1;}
 }
 
 @-webkit-keyframes bounce {
-        	0%{ -webkit-transform:scale(0); opacity:0;}
-        	50%{ -webkit-transform:scale(1.3); opacity:0.4;}
-        	75%{ -webkit-transform:scale(0.9); opacity:0.7;}
-        	100%{ -webkit-transform:scale(1); opacity:1;}
+    0%{ -webkit-transform:scale(0); opacity:0;}
+    50%{ -webkit-transform:scale(1.3); opacity:0.4;}
+    75%{ -webkit-transform:scale(0.9); opacity:0.7;}
+    100%{ -webkit-transform:scale(1); opacity:1;}
 }
 
 #score-footer {
@@ -233,43 +232,43 @@ audio {
 }
 
 .overlay {
-    	position: absolute; 
-    	display: none;
-    	width: 100%; 
-    	height: 100%; 
-    	top: 0; 
-    	bottom: 0;
-    	left: 0;
-    	right: 0;
-    	background-color: rgba(0, 0, 0, 0.5); 
-    	z-index: 4; 
+    position: absolute; 
+    display: none;
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    bottom: 0;
+   	left: 0;
+   	right: 0;
+   	background-color: rgba(0, 0, 0, 0.5); 
+   	z-index: 4; 
 }
 
 .gif-background {
 	position: absolute; 
-    	display: none;
+    display: none;
     background: black;
 	width: 330px;
 	height: 330px;
-    	top: 0; 
-    	bottom: 0;
-    	left: 0;
-    	right: 0;
-    	z-index: 5; 
-    	margin: auto auto;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5; 
+    margin: auto auto;
 }
 
 .gif {
 	position: absolute; 
-    	display: none;
+    display: none;
 	width: 330px;
 	height: 330px;
-    	top: 0; 
-    	bottom: 0;
-    	left: 0;
-    	right: 0;
-    	z-index: 6; 
-    	margin: auto auto;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 6; 
+    margin: auto auto;
 }
 
 #end-text {
