@@ -81,7 +81,7 @@ section {
 	margin: auto;
 }
 
-#goal-container {
+#magic-container {
 	min-height: 80px;
 	min-width: 250px;
 	margin: 20px;
@@ -94,7 +94,7 @@ section {
 	animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
-#goal-number {
+#magic-number {
 	font-size: 40px;
 }
 

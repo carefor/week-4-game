@@ -8,7 +8,7 @@ var sparkleCrystal;
 var flashCrystal;
 var morphCrystal;
 var diamondCrystal;
-var goalNumber = 0;
+var magicNumber = 0;
 var totalScore = 0;
 var overlay = document.querySelector(".overlay");
 var gif = document.querySelector(".gif");
@@ -24,8 +24,8 @@ function generateRandomAll() {
 	flashCrystal = getRandomNum(1, 12);
 	morphCrystal = getRandomNum(1, 12);
 	diamondCrystal = getRandomNum(1, 12);
-	goalNumber = getRandomNum(19, 120);
-	$("#goal-number").html(goalNumber);
+	magicNumber = getRandomNum(19, 120);
+	$("#magic-number").html(magicNumber);
 }
 generateRandomAll() ;
 
@@ -36,9 +36,9 @@ function crystalClick() {
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
 		console.log("This sparkle-crystal is worth " + sparkleCrystal);
-			if (totalScore === goalNumber) {
+			if (totalScore === magicNumber) {
 				gameWon();
-			} else if (totalScore > goalNumber) {
+			} else if (totalScore > magicNumber) {
 				gameLostTotal();
 			} else if (turnCounter === 0) {
 				gameLostTurns();
@@ -50,9 +50,9 @@ function crystalClick() {
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
 		console.log("This flash-crystal is worth " + flashCrystal);
-			if (totalScore === goalNumber) {
+			if (totalScore === magicNumber) {
 				gameWon();
-			} else if (totalScore > goalNumber) {
+			} else if (totalScore > magicNumber) {
 				gameLostTotal();
 			} else if (turnCounter === 0) {
 				gameLostTurns();
@@ -64,9 +64,9 @@ function crystalClick() {
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
 		console.log("This morph-crystal is worth " + morphCrystal);
-			if (totalScore === goalNumber) {
+			if (totalScore === magicNumber) {
 				gameWon();
-			} else if (totalScore > goalNumber) {
+			} else if (totalScore > magicNumber) {
 				gameLostTotal();
 			} else if (turnCounter === 0) {
 				gameLostTurns();
@@ -78,9 +78,9 @@ function crystalClick() {
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
 		console.log("The diamond-crystal is worth " + diamondCrystal);
-			if (totalScore === goalNumber) {
+			if (totalScore === magicNumber) {
 				gameWon();
-			} else if (totalScore > goalNumber) {
+			} else if (totalScore > magicNumber) {
 				gameLostTotal();
 			} else if (turnCounter === 0) {
 				gameLostTurns();
@@ -151,8 +151,8 @@ function reset() {
     totalScore = 0;
     $("#total-score").html(totalScore);
     $("#losses").html(lossCounter);
-    goalNumber = "";
-    $("#goal-number").html(goalNumber);
+    magicNumber = "";
+    $("#magic-number").html(magicNumber);
     generateRandomAll(); 
 }
 reset();
