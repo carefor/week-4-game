@@ -16,6 +16,7 @@ body {
 	margin-right: 10px;
 	margin-top: 10px;
 	font-size: 20px;
+	position: relative;
 }
 
 #overall-container {
@@ -241,18 +242,32 @@ audio {
     	left: 0;
     	right: 0;
     	background-color: rgba(0, 0, 0, 0.5); 
-    	z-index: 5; 
+    	z-index: 4; 
 }
 
 .gif {
 	position: absolute; 
     	display: none;
-	width: 300px;
-	height: 300px;
+	width: 330px;
+	height: 330px;
     	top: 0; 
     	bottom: 0;
     	left: 0;
     	right: 0;
     	z-index: 6; 
+    	margin: auto auto;
+}
+
+#gif-background {
+	background: white;
+	position: absolute; 
+    	display: none;
+	width: 330px;
+	height: 330px;
+    	top: 0; 
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	z-index: 5; 
     	margin: auto auto;
 }

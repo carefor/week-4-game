@@ -12,6 +12,7 @@ var goalNumber = 0;
 var totalScore = 0;
 var overlay = document.querySelector(".overlay");
 var gif = document.querySelector(".gif");
+var gifBackground = document.querySelector("#gif-background");
 
 function getRandomNum(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
@@ -89,9 +90,8 @@ function crystalClick() {
 crystalClick();
 
 function overlayLostTurns() {
-	overlay = document.querySelector(".overlay");
   	overlay.style.display = "block";
-  	gif = document.querySelector(".gif");
+  	gifBackground.style.display = "block";
   	gif.style.display = "block'";
   	gif.style.background = "url('https://media.giphy.com/media/cN34n6Ka8GrcY/giphy.gif') no-repeat center center";
   	var turnsText = "Your total score is too high.. You've succumbed to the crystal curse. Game over!";
@@ -99,19 +99,17 @@ function overlayLostTurns() {
 }
 
 function overlayLostTotal() {
-	overlay = document.querySelector(".overlay");
   	overlay.style.display = "block";
-  	gif = document.querySelector(".gif");
-  	gif.style.display = "block'";
+  	gifBackground.style.display = "block";
+  	gif.style.display = "block";
   	gif.style.background = "url('https://media.giphy.com/media/cN34n6Ka8GrcY/giphy.gif') no-repeat center center";
   	var loseText = "Oops! Looks like you ran out of turns. Better luck next time.. ";
   	$("#end-text").append(loseText);
 }
 
 function overlayWon() {
-	overlay = document.querySelector(".overlay");
   	overlay.style.display = "block";
-  	gif = document.querySelector(".gif");
+  	gifBackground.style.display = "block";
   	gif.style.display = "block'";
   	gif.style.background = "url('https://media.giphy.com/media/l378vyvOMTge2eD84/giphy.gif') no-repeat center center";
   	var winText = "Your skills are legendary.. You win!";
@@ -122,7 +120,7 @@ function gameLostTurns () {
 	lossCounter++;
 	$("#losses").html(lossCounter);
 	overlayLostTurns();
-	setTimeout (reset, 5000);
+	//setTimeout (reset, 5000);
 
 }
 
@@ -130,7 +128,7 @@ function gameLostTotal () {
 	lossCounter++;
 	$("#losses").html(lossCounter);
 	overlayLostTotal();
-	setTimeout (reset, 5000);
+	//setTimeout (reset, 5000);
 }
 
 function gameWon () {
@@ -141,7 +139,7 @@ function gameWon () {
 }
 
 function reset() {
-        	overlay = document.querySelector(".overlay");
+    //overlay = document.querySelector(".overlay");
   	overlay.style.display = "none";
   	gif = document.querySelector(".gif");
   	gif.style.display = "none";
