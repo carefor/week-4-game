@@ -14,20 +14,46 @@ var overlay = document.querySelector(".overlay");
 var gif = document.querySelector(".gif");
 var gifBackground = document.querySelector(".gif-background");
 
-function getRandomNum(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
-}
-getRandomNum();
+function getRandomNum() {
+	var rangeArray = [];
+	var i;
 
-function generateRandomAll() {
-	sparkleCrystal = getRandomNum(1, 12);
-	flashCrystal = getRandomNum(1, 12);
-	morphCrystal = getRandomNum(1, 12);
-	diamondCrystal = getRandomNum(1, 12);
-	magicNumber = getRandomNum(19, 120);
+	for (var i = 1; i <= 12; i++) {
+   		rangeArray.push(i);
+   	}
+   	console.log("Original array: " + rangeArray);
+
+   	var theLength = rangeArray.length - 1;
+   	var randomize;
+   	var tempValue;
+
+   	for (i = theLength; i > 0; i--) { 
+    	randomize = Math.floor(Math.random() * i);
+    	tempValue = rangeArray[i];
+    	rangeArray[i] = rangeArray[randomize];
+    	rangeArray[randomize] = tempValue;
+	}
+	console.log("Shuffled array: " + rangeArray);
+
+   	for (i = 0; i < 4; i++) {
+   		sparkleCrystal = rangeArray[0];
+		flashCrystal = rangeArray[1];
+		morphCrystal = rangeArray[2];
+		diamondCrystal = rangeArray[3];
+	}
+	console.log("The sparkle-crystal is worth " + sparkleCrystal);
+	console.log("The flash-crystal is worth " + flashCrystal);
+	console.log("The morph-crystal is worth " + morphCrystal);
+	console.log("The diamond-crystal is worth " + diamondCrystal);
+
+
+    var min = 19; 
+    var max = 120;
+    var magicNumber = Math.floor(Math.random() * (max - min) + min);
 	$("#magic-number").html(magicNumber);
+	console.log("The magic number is " + magicNumber);
 }
-generateRandomAll() ;
+
 
 function crystalClick() {
 	$("#sparkle-crystal").on("click", function() {
@@ -35,7 +61,6 @@ function crystalClick() {
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
-		console.log("This sparkle-crystal is worth " + sparkleCrystal);
 			if (totalScore === magicNumber) {
 				gameWon();
 			} else if (totalScore > magicNumber) {
@@ -49,7 +74,6 @@ function crystalClick() {
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
-		console.log("This flash-crystal is worth " + flashCrystal);
 			if (totalScore === magicNumber) {
 				gameWon();
 			} else if (totalScore > magicNumber) {
@@ -63,7 +87,6 @@ function crystalClick() {
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
-		console.log("This morph-crystal is worth " + morphCrystal);
 			if (totalScore === magicNumber) {
 				gameWon();
 			} else if (totalScore > magicNumber) {
@@ -77,7 +100,6 @@ function crystalClick() {
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
-		console.log("The diamond-crystal is worth " + diamondCrystal);
 			if (totalScore === magicNumber) {
 				gameWon();
 			} else if (totalScore > magicNumber) {
@@ -153,6 +175,6 @@ function reset() {
     $("#losses").html(lossCounter);
     magicNumber = "";
     $("#magic-number").html(magicNumber);
-    generateRandomAll(); 
+    getRandomNum(); 
 }
 reset();
