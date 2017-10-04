@@ -93,7 +93,7 @@ function overlayLostTurns() {
   	overlay.style.display = "block";
   	gifBackground.style.display = "block";
   	gif.style.display = "block";
-  	gif.style.background = "url('https://media.giphy.com/media/cN34n6Ka8GrcY/giphy.gif') no-repeat center center";
+  	gif.style.background = "url('https://media.giphy.com/media/dng7u2mrY7Gfe/giphy.gif') no-repeat center center";
   	var turnsText = "You ran out of turns.. Our planet has succumbed to the crystal curse!";
   	$("#end-text").append(turnsText);
   	console.log("*You ran out of turns. Game over.");
@@ -113,7 +113,7 @@ function overlayWon() {
   	overlay.style.display = "block";
   	gifBackground.style.display = "block";
   	gif.style.display = "block";
-  	gif.style.background = "url('https://media.giphy.com/media/l378vyvOMTge2eD84/giphy.gif') no-repeat center center";
+  	gif.style.background = "url('https://media.giphy.com/media/l41Yt9kM4fusKvrK8/giphy.gif') no-repeat center center";
   	var winText = "*Your skills are legendary.. We're saved!";
   	$("#end-text").append(winText);
   	console.log("You win!")
