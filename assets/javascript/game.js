@@ -12,7 +12,7 @@ var goalNumber = 0;
 var totalScore = 0;
 var overlay = document.querySelector(".overlay");
 var gif = document.querySelector(".gif");
-var gifBackground = document.querySelector("#gif-background");
+var gifBackground = document.querySelector(".gif-background");
 
 function getRandomNum(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
@@ -35,7 +35,7 @@ function crystalClick() {
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
-		console.log("The current score is " + totalScore);
+		console.log("This sparkle-crystal is worth " + sparkleCrystal);
 			if (totalScore === goalNumber) {
 				gameWon();
 			} else if (totalScore > goalNumber) {
@@ -49,7 +49,7 @@ function crystalClick() {
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
-		console.log("The current score is " + totalScore);
+		console.log("This flash-crystal is worth " + flashCrystal);
 			if (totalScore === goalNumber) {
 				gameWon();
 			} else if (totalScore > goalNumber) {
@@ -63,7 +63,7 @@ function crystalClick() {
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
-		console.log("The current score is " + totalScore);
+		console.log("This morph-crystal is worth " + morphCrystal);
 			if (totalScore === goalNumber) {
 				gameWon();
 			} else if (totalScore > goalNumber) {
@@ -77,7 +77,7 @@ function crystalClick() {
 		turnCounter--;
 		$("#total-score").html(totalScore);
 		$("#turns").html(turnCounter);
-		console.log("The current score is " + totalScore);
+		console.log("The diamond-crystal is worth " + diamondCrystal);
 			if (totalScore === goalNumber) {
 				gameWon();
 			} else if (totalScore > goalNumber) {
@@ -92,10 +92,11 @@ crystalClick();
 function overlayLostTurns() {
   	overlay.style.display = "block";
   	gifBackground.style.display = "block";
-  	gif.style.display = "block'";
+  	gif.style.display = "block";
   	gif.style.background = "url('https://media.giphy.com/media/cN34n6Ka8GrcY/giphy.gif') no-repeat center center";
-  	var turnsText = "Your total score is too high.. You've succumbed to the crystal curse. Game over!";
+  	var turnsText = "You ran out of turns.. Our planet has succumbed to the crystal curse!";
   	$("#end-text").append(turnsText);
+  	console.log("*You ran out of turns. Game over.");
 }
 
 function overlayLostTotal() {
@@ -103,24 +104,26 @@ function overlayLostTotal() {
   	gifBackground.style.display = "block";
   	gif.style.display = "block";
   	gif.style.background = "url('https://media.giphy.com/media/cN34n6Ka8GrcY/giphy.gif') no-repeat center center";
-  	var loseText = "Oops! Looks like you ran out of turns. Better luck next time.. ";
+  	var loseText = "You've exceeded the magic number.. Our planet has succumbed to the crystal curse!";
   	$("#end-text").append(loseText);
+  	console.log("*You've exceeded the magic number. Game over.");
 }
 
 function overlayWon() {
   	overlay.style.display = "block";
   	gifBackground.style.display = "block";
-  	gif.style.display = "block'";
+  	gif.style.display = "block";
   	gif.style.background = "url('https://media.giphy.com/media/l378vyvOMTge2eD84/giphy.gif') no-repeat center center";
-  	var winText = "Your skills are legendary.. You win!";
+  	var winText = "*Your skills are legendary.. We're saved!";
   	$("#end-text").append(winText);
+  	console.log("You win!")
 }
 
 function gameLostTurns () {
 	lossCounter++;
 	$("#losses").html(lossCounter);
 	overlayLostTurns();
-	//setTimeout (reset, 5000);
+	setTimeout (reset, 7000);
 
 }
 
@@ -128,28 +131,28 @@ function gameLostTotal () {
 	lossCounter++;
 	$("#losses").html(lossCounter);
 	overlayLostTotal();
-	//setTimeout (reset, 5000);
+	setTimeout (reset, 7000);
 }
 
 function gameWon () {
 	winCounter++;
 	$("#wins").html(winCounter);
 	overlayWon();
-	setTimeout (reset, 5000);
+	setTimeout (reset, 7000);
 }
 
 function reset() {
-    //overlay = document.querySelector(".overlay");
   	overlay.style.display = "none";
-  	gif = document.querySelector(".gif");
+  	gifBackground.style.display = "none";
   	gif.style.display = "none";
-        	turnCounter = 20;
-        	$("#turns").html(turnCounter);
-        	totalScore = 0;
-        	$("#total-score").html(totalScore);
-        	$("#losses").html(lossCounter);
-         	goalNumber = "";
-        	$("#goal-number").html(goalNumber);
-        	generateRandomAll(); 
+  	$("#end-text").empty();
+    turnCounter = 20;
+    $("#turns").html(turnCounter);
+    totalScore = 0;
+    $("#total-score").html(totalScore);
+    $("#losses").html(lossCounter);
+    goalNumber = "";
+    $("#goal-number").html(goalNumber);
+    generateRandomAll(); 
 }
 reset();

@@ -245,6 +245,20 @@ audio {
     	z-index: 4; 
 }
 
+.gif-background {
+	position: absolute; 
+    	display: none;
+    background: black;
+	width: 330px;
+	height: 330px;
+    	top: 0; 
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	z-index: 5; 
+    	margin: auto auto;
+}
+
 .gif {
 	position: absolute; 
     	display: none;
@@ -258,16 +272,11 @@ audio {
     	margin: auto auto;
 }
 
-#gif-background {
-	background: white;
-	position: absolute; 
-    	display: none;
-	width: 330px;
-	height: 330px;
-    	top: 0; 
-    	bottom: 0;
-    	left: 0;
-    	right: 0;
-    	z-index: 5; 
-    	margin: auto auto;
+#end-text {
+	font-size: 20px;
+	font-family: 'Julius Sans One', 'Helvetica', sans-serif;
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+	text-align: center;
+
 }
